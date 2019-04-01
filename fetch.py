@@ -124,6 +124,15 @@ scatter_matrix(housing[attributes], figsize=(12, 8))
 
 housing.plot(kind="scatter", x="median_income", y="median_house_value", alpha=0.1)
 
-# 
+# Experimenting with Attribute Combinations
+# Creating new Attributes
+housing["rooms_per_household"] = housing["total_rooms"]/housing["households"]
+housing["bedrooms_per_room"] = housing["total_bedrooms"]/housing["total_rooms"]
+housing["population_per_household"] = housing["population"]/housing["households"]
 
+#endregion
+
+#region Prepare the Data for Machine Learning Algorithms
+housing = strat_train_set.drop("median_house_value", axis=1)
+housing_labels = strat_train_set["median_house_value"].copy()
 #endregion
