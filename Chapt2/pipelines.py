@@ -1,8 +1,9 @@
-import Chapt2.customTransforms
-
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.impute import SimpleImputer
+
+from Chapt2.customTransforms import *
+from Chapt2.prepareData import *
 
 num_pipeline = Pipeline([
     ('imputer', SimpleImputer(strategy="median")),

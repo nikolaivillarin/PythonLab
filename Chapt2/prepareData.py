@@ -1,9 +1,10 @@
-import Chapt2.cuttingData
 import pandas as pd
 
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import OrdinalEncoder
 from sklearn.preprocessing import OneHotEncoder
+
+from Chapt2.cuttingData import *
 
 #region Prepare the Data for Machine Learning Algorithms
 

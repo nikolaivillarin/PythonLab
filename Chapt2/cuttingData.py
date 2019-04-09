@@ -14,6 +14,9 @@ housing["income_cat"].hist()
 
 split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)
 
+strat_train_set = None
+strat_test_set = None
+
 for train_index, test_index in split.split(housing, housing["income_cat"]):
     strat_train_set = housing.loc[train_index]
     strat_test_set = housing.loc[test_index]

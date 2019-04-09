@@ -1,6 +1,9 @@
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 
+from Chapt2.prepareData import *
+from Chapt2.pipelines import *
+
 num_attribs = list(housing_num)
 cat_attribs = ["ocean_proximity"]
 
