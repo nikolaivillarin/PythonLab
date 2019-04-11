@@ -11,3 +11,9 @@ series2
 
 npArray = np.array([1,2,3])
 npArray
+
+npOnes = np.ones((3, 4), dtype=np.int16)
+npOnes
+
+npFull = np.full((3, 4), 0.11)
+npFull
