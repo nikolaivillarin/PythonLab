@@ -1,6 +1,7 @@
 from sklearn.model_selection import cross_val_score
 
 from Chapt2.decisionTreeRegressor import *
+from Chapt2.randomForestRegressor import *
 
 # --== Get the Scores ==--
 scores = cross_val_score(tree_reg, housing_prepared, housing_labels,
@@ -32,3 +33,8 @@ display_scores(lin_rmse_scores)
 
 
 # --== Look at the Results for RandomForestRegressor  ==--
+forest_scores = cross_val_score(forest_reg, housing_prepared, housing_labels,
+    scoring="neg_mean_squared_error", cv=10)
+
+forest_rmse_scores = np.sqrt(-forest_scores)
+display_scores(forest_rmse_scores)

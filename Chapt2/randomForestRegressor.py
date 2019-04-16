@@ -1,6 +1,6 @@
 from sklearn.ensemble import RandomForestRegressor
 
-from Chapt2.crossValidation import *
+from Chapt2.trainingModel import *
 
 # --== Initialize Model ==--
 forest_reg = RandomForestRegressor()
