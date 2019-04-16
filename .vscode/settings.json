@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "envwin\\Scripts\\python.exe",
+    "python.pythonPath": "env/bin/python",
     "git.ignoreLimitWarning": true
 }
