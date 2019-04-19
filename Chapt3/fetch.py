@@ -31,3 +31,7 @@ y = y.astype(np.uint8)
 
 # create a test set and set it aside before inspecting the data closely
 X_train, X_test, y_train, y_test = X[:60000], X[60000:], y[:60000], y[60000:]
+
+# Training a Binary Classifier
+y_train_5 = (y_train == 5) # True for all 5s, False for all other digits
+y_test_5 = (y_test == 5)
