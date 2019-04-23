@@ -22,9 +22,9 @@ some_digit = X[0]
 some_digit_image = some_digit.reshape(28, 28)
 
 # show the image
-plt.imshow(some_digit_image, cmap = mpl.cm.binary, interpolation="nearest")
-plt.axis("off")
-plt.show()
+# plt.imshow(some_digit_image, cmap = mpl.cm.binary, interpolation="nearest")
+# plt.axis("off")
+# plt.show()
 
 # since we prefer numbers, cast y to integers
 y = y.astype(np.uint8)

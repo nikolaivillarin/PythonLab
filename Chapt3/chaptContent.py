@@ -41,7 +41,7 @@ y_test_5 = (y_test == 5)
 
 
 #region sgdClassifer.py
-sgd_clf = SGDClassifier(random_state=42, max_iter=1000)
+sgd_clf = SGDClassifier(random_state=42, max_iter=500)
 sgd_clf.fit(X_train, y_train_5)
 
 # Predict if the image is a 5
