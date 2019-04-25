@@ -44,7 +44,7 @@ precisions, recalls, thresholds = precision_recall_curve(y_train_5, y_scores)
 
 # Step 3 - Visual the scores by mapping
 def plot_precision_recall_vs_threshold(precisions, recalls, thresholds):
-    plt.plot(recalls, precisions[:-1], "b--", label="Precision")
+    plt.plot(thresholds, precisions[:-1], "b--", label="Precision")
     plt.plot(thresholds, recalls[:-1], "g-", label="Recall")
     plt.xlabel("Threshold")
     plt.legend(loc="center left")
