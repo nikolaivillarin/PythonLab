@@ -41,3 +41,5 @@ plt.plot(fpr, tpr, "b:", label="SGD")
 plot_roc_curve(fpr_forest, tpr_forest, "Random Forest")
 plt.legend(loc="lower right")
 plt.show()
+
+roc_auc_score(y_train_5, y_scores_forest)
