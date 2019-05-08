@@ -11,3 +11,8 @@ knn_clf = KNeighborsClassifier()
 knn_clf.fit(X_train, y_multilabel)
 
 knn_clf.predict([some_digit])
+
+# Scoring the Classification using F1 score
+y_train_knn_pred = cross_val_predict(knn_clf, X_train, y_multilabel, cv=3)
+
+f1_score(y_multilabel, y_train_knn_pred, average="macro")
