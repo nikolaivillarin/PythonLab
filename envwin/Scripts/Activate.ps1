@@ -27,7 +27,7 @@ function global:deactivate ([switch]$NonDestructive) {
 
 deactivate -nondestructive
 
-$env:VIRTUAL_ENV="C:\Users\Administrator\Desktop\20190403_Python\envwin"
+$env:VIRTUAL_ENV="C:\Users\Administrator\Desktop\20190630_Python\envwin"
 
 if (! $env:VIRTUAL_ENV_DISABLE_PROMPT) {
     # Set the prompt to include the env name
