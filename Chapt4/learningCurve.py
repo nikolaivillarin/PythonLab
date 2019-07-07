@@ -33,3 +33,13 @@ y = 0.5 * X**2 + X + 2 + np.random.randn(m, 1)
 lin_reg = LinearRegression()
 
 plot_learning_curves(lin_reg, X, y)
+
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.pipeline import Pipeline
+
+polynomial_regression = Pipeline([
+        ("poly_features", PolynomialFeatures(degree=10, include_bias=False)),
+        ("lin_reg", LinearRegression())
+])
+
+plot_learning_curves(polynomial_regression, X, y)
