@@ -18,7 +18,7 @@ X = moons[0]
 y = moons[1]
 
 # Instantiate SVM Model
-svm_reg = SVR(kernel="poly", degree="2", C=100, epsilon=0.1)
+svm_reg = SVR(kernel="poly", degree=2, C=100, epsilon=0.1)
 
 # Train the Model
 svm_reg.fit(X, y)
