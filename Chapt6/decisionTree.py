@@ -37,3 +37,7 @@ export_graphviz(
     rounded=True,
     filled=True
 )
+
+# Prediction
+tree_clf.predict_proba([[5, 1.5]])
+tree_clf.predict([[5, 1.5]])
